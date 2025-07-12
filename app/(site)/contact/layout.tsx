@@ -13,7 +13,7 @@ const ContactPageLayout = (props: any) => {
       >
         {props.children}
       </section>
-      <section className=" max-w-screen-lg m-auto ">{/* <Sharing /> */}</section>
+      <section className="max-w-screen-lg m-auto ">{/* <Sharing /> */}</section>
       <section>
         <Link href="#top" className=" scroll-smooth ">
           <div className="darkMode fixed bottom-32 right-0 border bg-black text-white border-slate-700 p-2 pt-3 px-4 cursor-pointer rounded-s-2xl dark:bg-slate-900  dark:text-black shadow-inner z-50 scroll-smooth">

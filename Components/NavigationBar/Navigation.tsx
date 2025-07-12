@@ -92,7 +92,7 @@ const Navigation = (props: NavigationProps) => {
         <div className="col-span-7 md:col-span-6 border-0 border-purple-400 m-0 p-0 mr-3  ">
           <ul className="list-none flex space-x-2 md:space-x-6 text-white justify-end mt-2">
             <li>
-              <Link href="/" className="text-white">
+              <Link href="/login" className="text-white">
                 <FaHome size={27} />
                 {/* Login */}
               </Link>

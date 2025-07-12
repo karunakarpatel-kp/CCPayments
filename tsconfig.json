@@ -38,7 +38,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/Blog/(markdown)/reduce-image-size-in-kb/page.mdx"
+    "app/(site)/(markdown)/reduce-image-size-in-kb/page.mdx"
   ],
   "exclude": ["node_modules"]
 }
