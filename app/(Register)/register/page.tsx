@@ -1,12 +1,12 @@
-import LoginCreds from "Components/LoginCreds/LoginCreds";
 import { CustomMetaData } from "Components/MetaData/CustomMetaData";
+import RegisterCred from "Components/Register/RegisterCreds";
 import { SEO_OBJ } from "Essential";
 import Link from "next/link";
 import React from "react";
 
 export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });
 
-const LoginPage = () => {
+const RegisterPage = () => {
   return (
     <section className="grid grid-cols-12 border-0 border-red-700 text-white h-screen">
       <section className="col-span-6 border-0 border-green-400 bg-brandColor p-1 flex flex-col">
@@ -24,10 +24,10 @@ const LoginPage = () => {
         </section>
       </section>
       <section className="col-span-6 border border-red-900 text-black p-1 ">
-        <LoginCreds />
+        <RegisterCred />
       </section>
     </section>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
