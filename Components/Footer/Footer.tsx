@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaPhone, FaTwitterSquare } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
 import { FaPinterestSquare } from "react-icons/fa";
 import {
@@ -26,28 +26,35 @@ const Footer = () => {
         }
       >
         {/* Desktop */}
-        <div className="Left border-0 border-white col-span-1 invisible">Left</div>
-        <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white flex items-center font-semibold text-base justify-center md:justify-start">
-          Karunakar Patel @All Rights Reserved
+        <div className="Left border-0 border-white col-span-1 invisible">{/* left */}</div>
+        <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white  font-semibold text-base pb-12">
+          <h6 className="italic text-3xl text-white font-semibold pb-5 pt-4">SettlePe</h6>
+          <h6 className="italic text-2xl text-white font-semibold pb-5 pt-1">Hanuman Enterprises</h6>
+          <address className="not-italic">
+            Sri Krishna Nagar, <br /> Narsampet, <br /> Warangal Rural, <br /> Telangana 506132
+          </address>
+          <br />
+          <span>9491993154</span> <br />
+          <span>karunakarpatel.business@gmail.com</span>
         </div>
-        <div className="privacyLinks border-0 border-red-800 col-span-4">
-          <ul className="list-none flex flex-wrap px-3 md:space-x-5 text-white justify-evenly md:justify-center md:flex-wrap mt-3">
-            <li>
+        <div className="privacyLinks border-0 border-white col-span-4">
+          <ul className="list-none flex flex-col m-auto flex-wrap  justify-center align-middle pt-10">
+            <li className="text-center">
               <Link href="/contact" className="text-white">
                 Contact Us
               </Link>
             </li>
-            <li>
+            <li className="text-center">
               <Link href="/privacy" className="text-white">
                 Privacy Policy
               </Link>
             </li>
-            <li>
+            <li className="text-center">
               <Link href="/disclaimer" className="text-white">
                 Disclaimer
               </Link>
             </li>
-            <li>
+            <li className="text-center">
               <Link href="/sitemap.xml" className="text-white">
                 Sitemap
               </Link>
@@ -71,7 +78,10 @@ const Footer = () => {
             <EmailIcon size={34} className="rounded-md" />
           </EmailShareButton>
         </div>
-        <div className="Right border-0 border-white col-span-1 invisible">Right</div>
+        <div className="Right border-0 border-white col-span-1 invisible">{/* Right */}</div>
+      </div>
+      <div className="text-white w-full text-center text-lg  bg-brandColor py-5 -mt-5">
+        All Rights Reserved, CopyRight @ Karunakar Patel
       </div>
     </>
   );

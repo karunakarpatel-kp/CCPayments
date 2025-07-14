@@ -4,7 +4,7 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 
-const LoginPageRootLayout = (props: RootLayoutProps) => {
+const RegisterPageLayout = (props: RootLayoutProps) => {
   return (
     <html lang="en">
       <body className="relative p-0 m-0 bg-white max-w-full border-0 border-black overflow-x-hidden ">
@@ -19,4 +19,4 @@ const LoginPageRootLayout = (props: RootLayoutProps) => {
   );
 };
 
-export default LoginPageRootLayout;
+export default RegisterPageLayout;
