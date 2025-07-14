@@ -38,7 +38,7 @@ const Navigation = (props: NavigationProps) => {
       >
         {/* Desktop */}
         <div className="hidden md:invisible lg:flex col-span-1 border-0 border-white self-stretch justify-center items-center ">
-          left
+          {/* left */}
         </div>
         <div className="col-span-5 md:col-span-4  border-0 border-white mt-1 ml-2 md:ml-0 lg:ml-0 ">
           <div
@@ -75,19 +75,9 @@ const Navigation = (props: NavigationProps) => {
         </div> */}
 
         <div className="hidden md:invisible lg:flex col-span-1 border-2 border-white self-stretch justify-center items-center ">
-          Right
+          {/* Right */}
         </div>
       </div>
-      {homePage && (
-        <div className="border-0 border-white text-white pt-10 bg-brandColor ">
-          <div className="text-white border-0 text-center py-9 mt-10">
-            <h1 className="text-white font-bold text-3xl md:text-4xl">Welcome to Abomma</h1>
-            <p className="text-white font-semibold text-xl capitalize">
-              A place where you learn about the latest news, updates, upcoming releases at Ibomma.
-            </p>
-          </div>
-        </div>
-      )}
     </>
   );
 };
