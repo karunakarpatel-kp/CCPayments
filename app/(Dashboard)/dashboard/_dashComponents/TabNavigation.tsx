@@ -23,7 +23,7 @@ const TabNavigation = (props: tabNavigationProps) => {
         </li>
         <li className="mx-3">
           <Link
-            href="/"
+            href="/dashboard/VendorPayments"
             className={
               `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
               `${activeTab ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
@@ -35,7 +35,7 @@ const TabNavigation = (props: tabNavigationProps) => {
 
         <li className="mx-4">
           <Link
-            href="/"
+            href="/dashboard/PayUtilityBills"
             className={
               `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
               `${activeTab ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
