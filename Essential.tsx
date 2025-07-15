@@ -1,6 +1,6 @@
 import seoImage from "/public/seo.jpg";
-import nextjsInstallImage from "/public/nextjs_install.png";
-import welcomePatelsImage from "/public/welcome-page.png";
+import nextjsInstallImage from "./public/nextjs_install.png";
+import welcomePatelsImage from "./public/welcome-page.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
