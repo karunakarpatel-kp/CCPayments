@@ -25,7 +25,6 @@ const DashboardLayout = (props: DashboardLayoutProps) => {
             <section>{props.children}</section>
           </section>
         </main>
-
         <footer>
           <Footer />
         </footer>

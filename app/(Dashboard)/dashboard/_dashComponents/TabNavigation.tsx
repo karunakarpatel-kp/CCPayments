@@ -12,9 +12,9 @@ const TabNavigation = (props: tabNavigationProps) => {
       <ul className="list-none border-0 inline-flex p-0 m-0">
         <li className="mx-2">
           <Link
-            href="/"
+            href="/dashboard/AddFunds"
             className={
-              `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
+              ` text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
               `${true ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
             }
           >
