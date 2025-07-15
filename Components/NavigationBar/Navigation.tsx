@@ -42,7 +42,7 @@ const Navigation = (props: NavigationProps) => {
         </div>
         <div className="col-span-5 md:col-span-4  border-0 border-white mt-1 ml-2 md:ml-0 lg:ml-0 ">
           <div
-            className="border-0 border-red-600 inline-block text-3xl font-semibold text-white mt-2 italic"
+            className="border-0 border-red-600 inline-block text-3xl font-semibold text-white mt-2 italic hover:cursor-pointer"
             onClick={onLogoClickHandler}
           >
             SettlePe

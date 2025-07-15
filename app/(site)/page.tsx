@@ -10,8 +10,6 @@ import axisImage from "../../public/axisBank.png";
 import finoImage from "../../public/finobank.png";
 import payTmImage from "../../public/payTM.png";
 
-import sampleImage from "../../public/Redux_Toolkit_slice.png";
-
 export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });
 
 const Home = () => {
