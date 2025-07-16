@@ -1,7 +1,15 @@
 import React from "react";
+import VendorForm from "./_VendorComponents/VendorForm";
 
 const VendorPaymentsPage = () => {
-  return <h4>Vendor Payments Content Page Goes Here...!</h4>;
+  return (
+    <section>
+      <h4 className="text-brandColor text-2xl italic border-0 border-black mt-3 px-2">Vendor Form</h4>
+      <div>
+        <VendorForm />
+      </div>
+    </section>
+  );
 };
 
 export default VendorPaymentsPage;

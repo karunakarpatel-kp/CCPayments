@@ -21,7 +21,7 @@ const TabNavigation = (props: tabNavigationProps) => {
             Add Funds
           </Link>
         </li>
-        <li className="mx-3">
+        <li className="mx-8">
           <Link
             href="/dashboard/VendorPayments"
             className={
@@ -33,7 +33,7 @@ const TabNavigation = (props: tabNavigationProps) => {
           </Link>
         </li>
 
-        <li className="mx-4">
+        <li className="mx-8">
           <Link
             href="/dashboard/PayUtilityBills"
             className={
@@ -45,7 +45,7 @@ const TabNavigation = (props: tabNavigationProps) => {
           </Link>
         </li>
 
-        <li className="mx-4">
+        <li className="mx-8">
           <Link
             href="/"
             className={

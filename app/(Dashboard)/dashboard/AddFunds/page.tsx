@@ -1,15 +1,14 @@
 import React, { Suspense } from "react";
 import { FaTruckLoading } from "react-icons/fa";
+import AddCustomerData from "./_AddFundsComponents/AddCustomerData";
 
 const AddFunds = () => {
   return (
     <section>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut ab natus expedita maiores? Non voluptas
-        blanditiis molestias, modi cupiditate repellendus impedit, earum eveniet ullam tempore dignissimos illo natus.
-        Laborum quos molestiae minima veniam eos repellat sit tempore soluta aliquam error vero ea blanditiis, pariatur
-        commodi quis culpa odio rem.
-      </p>
+      <h4 className="text-brandColor text-2xl italic border-0 border-black mt-3 px-2">Add Funds</h4>
+      <div>
+        <AddCustomerData />
+      </div>
     </section>
   );
 };
