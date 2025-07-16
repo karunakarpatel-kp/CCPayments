@@ -1,10 +1,8 @@
 import React from "react";
+import SideBarDash from "../_dashComponents/SideBarDash";
+import DashboardContainer from "../_dashComponents/DashboardContainer";
 
-import Sidebar from "Components/Sidebar/Sidebar";
-import SideBarDash from "./_dashComponents/SideBarDash";
-import DashboardContainer from "./_dashComponents/DashboardContainer";
-
-const DashBoardPage = (props: any) => {
+const PayUtilityBillsPageLayout = (props: any) => {
   return (
     <section className=" mt-16 border-0 border-black grid grid-cols-12">
       {/* {props.children} */}
@@ -13,10 +11,10 @@ const DashBoardPage = (props: any) => {
       </aside>
       <section className="col-span-10 border-0 border-red-700">
         <DashboardContainer />
-        <section>{props.children}</section>
+        {props.children}
       </section>
     </section>
   );
 };
 
-export default DashBoardPage;
+export default PayUtilityBillsPageLayout;
