@@ -13,7 +13,7 @@ const DashBoardPage = (props: any) => {
       </aside>
       <section className="col-span-10 border-0 border-red-700">
         <DashboardContainer />
-        {props.children}
+        <section>{props.children}</section>
       </section>
     </section>
   );

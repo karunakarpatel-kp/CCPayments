@@ -1,11 +1,16 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { FaTruckLoading } from "react-icons/fa";
 
 const AddFunds = () => {
   return (
-    <div>
-      lorem Add Funds Content Goes here...! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
-      ducimus nisi sunt sit hic delectus labore repudiandae officiis quibusdam cupiditate?
-    </div>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut ab natus expedita maiores? Non voluptas
+        blanditiis molestias, modi cupiditate repellendus impedit, earum eveniet ullam tempore dignissimos illo natus.
+        Laborum quos molestiae minima veniam eos repellat sit tempore soluta aliquam error vero ea blanditiis, pariatur
+        commodi quis culpa odio rem.
+      </p>
+    </section>
   );
 };
 
