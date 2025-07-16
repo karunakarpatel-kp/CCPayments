@@ -1,17 +1,23 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
 
 interface BtnProps {
   active: boolean;
   title: string;
   iconName: any;
+  incomingBtnClickHandler: (a: string) => any;
 }
 
 const Btn = (props: BtnProps) => {
-  const { title, active, iconName } = props;
+  const { title, active, iconName, incomingBtnClickHandler } = props;
+
+  const onBtnClickHandler = (incomingTitle: string) => {
+    incomingBtnClickHandler(incomingTitle);
+  };
+
   return (
     <>
       <button
+        onClick={() => onBtnClickHandler(title)}
         type="button"
         className={
           `p-3  text-lg font-semibold w-11/12 rounded-sm hover:bg-brandColor ` +
