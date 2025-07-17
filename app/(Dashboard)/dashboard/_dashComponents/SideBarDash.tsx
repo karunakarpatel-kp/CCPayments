@@ -17,13 +17,13 @@ const SideBarDash = () => {
 
   useEffect(() => {
     if (incomingBtnTitle === "Bill Payments") {
-      router.push("/dashboard/");
+      router.push("/dashboard/AddFunds");
     }
     if (incomingBtnTitle === "Bank Charges") {
-      router.push("/bankcharges");
+      router.push("/dashboard/BankCharges");
     }
     if (incomingBtnTitle === "Profile") {
-      router.push("/profile");
+      router.push("/dashboard/Profile");
     }
   }, [incomingBtnTitle]);
 

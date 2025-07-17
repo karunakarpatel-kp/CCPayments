@@ -17,7 +17,7 @@ const PaymentDetails = () => {
       <div className=" m-auto w-full border-0 text-center absolute bottom-5">
         <button
           type="submit"
-          className=" bg-brandColor text-white w-1/6 px-5 py-2 text-lg  hover:bg-slate-200 hover:text-brandColor rounded-md shadow-lg"
+          className=" bg-brandColor text-white w-2/6 px-5 py-2 text-lg  hover:bg-slate-200 hover:text-brandColor rounded-md shadow-lg"
         >
           Add Money
         </button>
