@@ -22,7 +22,7 @@ const DashboardLayout = (props: DashboardLayoutProps) => {
         </header>
         <main className="border-0 border-red-900 grid grid-cols-12 ">
           <section className="col-span-12 border-0 border-red-500 w-full mb-32">
-            <section className="border-0 border-red-800 ">{props.children}</section>
+            <section className="border-0 border-red-800 min-h-[60vh]">{props.children}</section>
           </section>
         </main>
         <footer>

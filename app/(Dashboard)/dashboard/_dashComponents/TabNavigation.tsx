@@ -47,7 +47,7 @@ const TabNavigation = (props: tabNavigationProps) => {
 
         <li className="mx-8">
           <Link
-            href="/"
+            href="/dashboard/WalletHistory"
             className={
               `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
               `${activeTab ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
