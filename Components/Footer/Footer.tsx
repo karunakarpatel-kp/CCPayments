@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="privacyLinks border-0 border-white col-span-4">
           <ul className="list-none flex flex-col m-auto flex-wrap  justify-center align-middle pt-10">
             <li className="text-center">
-              <Link href="/contact" className="text-white">
+              <Link href="/contact-us" className="text-white">
                 Contact Us
               </Link>
             </li>
@@ -50,10 +50,21 @@ const Footer = () => {
               </Link>
             </li>
             <li className="text-center">
+              <Link href="/refund-and-cancellation-policy" className="text-white">
+                Refund And Cancellation Policy
+              </Link>
+            </li>
+            <li className="text-center">
+              <Link href="/terms-and-conditions" className="text-white">
+                Terms And Conditons
+              </Link>
+            </li>
+            <li className="text-center">
               <Link href="/disclaimer" className="text-white">
                 Disclaimer
               </Link>
             </li>
+
             <li className="text-center">
               <Link href="/sitemap.xml" className="text-white">
                 Sitemap
