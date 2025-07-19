@@ -1,8 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { FaFacebookSquare, FaPhone, FaTwitterSquare } from "react-icons/fa";
-import { ImInstagram } from "react-icons/im";
-import { FaPinterestSquare } from "react-icons/fa";
 import {
   EmailIcon,
   EmailShareButton,
@@ -27,7 +24,7 @@ const Footer = () => {
       >
         {/* Desktop */}
         <div className="Left border-0 border-white col-span-1 invisible">{/* left */}</div>
-        <div className="copyrightMessage border-0 border-green-500 col-span-3 cursor-pointer text-white  font-semibold text-base pb-12">
+        <div className="copyrightMessage border-0 border-green-500 col-span-12 md:col-span-3 lg:col-span-3 cursor-pointer text-white  font-semibold text-base pb-12 text-center md:text-left lg:text-left">
           <h6 className="italic text-3xl text-white font-semibold pb-5 pt-4">SettlePe</h6>
           <h6 className="italic text-2xl text-white font-semibold pb-5 pt-1">Hanuman Enterprises</h6>
           <address className="not-italic">
@@ -37,8 +34,8 @@ const Footer = () => {
           <span>+91 9491993154</span> <br />
           <span>karunakarpatel.settlepe@gmail.com</span>
         </div>
-        <div className="privacyLinks border-0 border-white col-span-4">
-          <ul className="list-none flex flex-col m-auto flex-wrap  justify-center align-middle pt-10">
+        <div className="privacyLinks border-0 border-white col-span-12 md:col-span-4 lg:col-span-4">
+          <ul className="list-none flex flex-col m-auto flex-wrap  justify-center align-middle pt-0 md:pt-10 lg:pt-10">
             <li className="text-center">
               <Link href="/contact-us" className="text-white">
                 Contact Us
@@ -72,7 +69,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="border-0 flex gap-5 pl-8 col-span-3 justify-center md:justify-end">
+        <div className="border-0 py-8 md:py-0 lg:py-0 flex gap-5 pl-8 col-span-12 md:col-span-3 lg:col-span-3 justify-center md:justify-end">
           <FacebookMessengerShareButton appId="" url={process.env.HOME_PAGE_BASE_URL!} title={SEO_OBJ.HOME_PAGE.title}>
             <FacebookIcon size={34} className="rounded-md " />
           </FacebookMessengerShareButton>
@@ -91,7 +88,7 @@ const Footer = () => {
         </div>
         <div className="Right border-0 border-white col-span-1 invisible">{/* Right */}</div>
       </div>
-      <div className="text-white w-full text-center text-lg  bg-brandColor py-5 -mt-5">
+      <div className="text-white w-full text-center text-base md:text-lg lg:text-lg  bg-brandColor py-5 mt-0 md:-mt-5 lg:-mt-5">
         All Rights Reserved, CopyRight @ Karunakar Patel
       </div>
     </>

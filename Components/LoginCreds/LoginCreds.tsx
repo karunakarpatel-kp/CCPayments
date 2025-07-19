@@ -11,8 +11,8 @@ const LoginCreds = () => {
   };
   return (
     <section className="w-full flex h-full">
-      <div className="w-full mt-32">
-        <h1 className="text-4xl font-semibold italic mb-14 text-brandColor mx-6 ">Login</h1>
+      <div className="w-full mt-5 md:mt-32 lg:mt-32">
+        <h1 className="text-4xl font-semibold italic mb-10 md:mb-14 lg:mb-14 text-brandColor mx-6 ">Login</h1>
         <div className="w-5/6 mx-6 my-3">
           <label className="text-xl pb-3 font-medium text-brandColor"> UserName</label>
           <input
