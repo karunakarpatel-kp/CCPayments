@@ -6,8 +6,6 @@ import Footer from "Components/Footer/Footer";
 import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
 import { AppProgressBar } from "next-nprogress-bar";
 import React from "react";
-import SideBarDash from "./_dashComponents/SideBarDash";
-import DashboardContainer from "./_dashComponents/DashboardContainer";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -22,18 +20,9 @@ const DashboardLayout = (props: DashboardLayoutProps) => {
         <header>
           <Navigation darkMode={false} />
         </header>
-        <main className="border-0 border-red-900 grid grid-cols-12">
+        <main className="border-0 border-red-900 grid grid-cols-12 ">
           <section className="col-span-12 border-0 border-red-500 w-full mb-32">
-            <section>{props.children}</section>
-            {/* <section className=" mt-16 border-0 border-black grid grid-cols-12">
-              <aside className="col-span-2 border-0 border-green-800 h-full mt-3 ">
-                <SideBarDash />
-              </aside>
-              <section className="col-span-10 border-0 border-red-700">
-                <DashboardContainer />
-                <section>{props.children}</section>
-              </section>
-            </section> */}
+            <section className="border-0 border-red-800 ">{props.children}</section>
           </section>
         </main>
         <footer>
