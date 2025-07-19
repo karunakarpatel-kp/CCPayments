@@ -34,8 +34,8 @@ const Footer = () => {
             Sri Krishna Nagar, <br /> Narsampet, <br /> Warangal Rural, <br /> Telangana 506132
           </address>
           <br />
-          <span>9491993154</span> <br />
-          <span>karunakarpatel.business@gmail.com</span>
+          <span>+91 9491993154</span> <br />
+          <span>karunakarpatel.settlepe@gmail.com</span>
         </div>
         <div className="privacyLinks border-0 border-white col-span-4">
           <ul className="list-none flex flex-col m-auto flex-wrap  justify-center align-middle pt-10">
