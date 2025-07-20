@@ -1,10 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Logo from "public/Logo.svg";
-import { FaBlog, FaCar, FaCarSide, FaHome } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { usePathname, useRouter } from "next/navigation";
-import { IoIosLogIn, IoMdClose } from "react-icons/io";
 import Link from "next/link";
 
 interface NavigationProps {
@@ -42,7 +38,7 @@ const Navigation = (props: NavigationProps) => {
         </div>
         <div className="col-span-5 md:col-span-4  border-0 border-white mt-1 ml-2 md:ml-0 lg:ml-0 ">
           <div
-            className="border-0 border-red-600 inline-block text-3xl font-semibold text-white mt-2 italic hover:cursor-pointer"
+            className="border-0 border-red-600 inline-block text-2xl md:text-3xl lg:text-3xl font-semibold text-white mt-2 italic hover:cursor-pointer"
             onClick={onLogoClickHandler}
           >
             SettlePe
@@ -53,7 +49,7 @@ const Navigation = (props: NavigationProps) => {
             <li>
               <Link
                 href="/login"
-                className="text-white text-xl underline underline-offset-8 font-normal italic  decoration-slate-100 hover:decoration-dotted"
+                className="text-white text-lg md:text-xl lg:text-xl underline underline-offset-8 font-normal italic  decoration-slate-100 hover:decoration-dotted"
               >
                 Login
               </Link>
@@ -62,7 +58,7 @@ const Navigation = (props: NavigationProps) => {
             <li>
               <Link
                 href="/register"
-                className="text-white text-xl underline underline-offset-8 font-normal italic decoration-slate-100 hover:decoration-dotted "
+                className="text-white text-lg md:text-xl lg:text-xl underline underline-offset-8 font-normal italic decoration-slate-100 hover:decoration-dotted "
               >
                 Register
               </Link>
