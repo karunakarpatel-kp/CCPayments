@@ -15,6 +15,41 @@ export function CustomMetaData(props: any) {
   });
   // console.log({ filteredOBJ, filteredURL });
 
+  const keywords = [
+    "SettlePe",
+    "Online bill payment",
+    "BBPS payment app",
+    "Rent payment platform",
+    "Utility bill payment India",
+    "Book flights online",
+    "Book bus tickets online",
+    "Pay rent using credit card",
+    "Fast bill payment app",
+    "Pay bills securely online",
+    "BBPS integrated platform",
+    "Electricity bill payment online",
+    "Water bill payment app",
+    "Broadband and DTH recharge",
+    "BBPS electricity payment",
+    "Pay rent with low charges",
+    "Rent payment using credit card",
+    "Monthly rent payment app",
+    "Credit card to bank account rent",
+    "Online flight booking India",
+    "Bus ticket booking app",
+    "Cheapest flight booking app",
+    "Book tickets with cashback",
+    "Credit card bill payment app",
+    "Use credit card to pay rent",
+    "Pay bills with credit card",
+    "Manage credit card payments online",
+    "Best app to pay bills in India",
+    "How to pay rent using credit card",
+    "Easy rent and bill payment online",
+    "Secure payment gateway India",
+    "Unified bill payment solution",
+  ];
+
   const metaDataOBJ: Metadata = {
     metadataBase: new URL(filteredOBJ[0].absoluteURL),
     title: filteredOBJ[0].title,
@@ -23,7 +58,7 @@ export function CustomMetaData(props: any) {
       google: process.env.GOOGLE_ANALYTICS_TAG,
     },
     category: filteredOBJ[0].category,
-    keywords: ["Karunakar Patel", "karunakarpatel", "coding", "nextjs"],
+    keywords: keywords,
     creator: "Karunakar Patel",
     openGraph: {
       title: filteredOBJ[0].title,
