@@ -4,7 +4,7 @@ import { SEO_OBJ } from "Essential";
 import Link from "next/link";
 import React from "react";
 
-export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });
+export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.REGISTRATION_PAGE.absoluteURL });
 
 const RegisterPage = () => {
   return (

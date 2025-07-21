@@ -29,8 +29,9 @@ const Home = () => {
               Settle Your Bills In Time
             </h1>
             <p className="text-lg md:text-xl lg:text-xl font-normal break-words">
-              Settle your bills with no time and day. Settle your bills with no time and day. This is some of the sample
-              text
+              At SettlePe, we offer a seamless platform where users can pay utility bills, book flight and bus tickets,
+              pay rent at low service charges, and even make payments using credit cards. SettlePe simplifies all your
+              financial transactions—fast, secure, and reliable.
             </p>
           </div>
         </div>

@@ -2,6 +2,10 @@ import React from "react";
 
 import SideBarDash from "./_dashComponents/SideBarDash";
 import DashboardContainer from "./_dashComponents/DashboardContainer";
+import { CustomMetaData } from "Components/MetaData/CustomMetaData";
+import { SEO_OBJ } from "Essential";
+
+export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.DASHBOARD_PAGE.absoluteURL });
 
 const DashBoardPage = (props: any) => {
   return (

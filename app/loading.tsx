@@ -3,7 +3,7 @@ import React from "react";
 
 const AppLayoutLoadingUI = () => {
   return (
-    <div className="h-dvh">
+    <body className="h-dvh">
       <div className="loadingUI border-0 grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-14 mt-24 mb-8">
         {blogPostsObj.map((singleBlogPost, index) => {
           return (
@@ -24,7 +24,7 @@ const AppLayoutLoadingUI = () => {
           );
         })}
       </div>
-    </div>
+    </body>
   );
 };
 
