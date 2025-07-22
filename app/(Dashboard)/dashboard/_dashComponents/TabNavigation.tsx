@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 interface tabNavigationProps {
@@ -7,57 +10,74 @@ interface tabNavigationProps {
 
 const TabNavigation = (props: tabNavigationProps) => {
   const { activeTab } = props;
+  const router = useRouter();
+  const onAddFundsClickHandler = () => {
+    router.push("/dashboard/AddFunds");
+  };
   return (
-    <div className="tabNavigation bg-slate-100 w-full mt-4 p-2">
-      <ul className="list-none border-0 inline-flex p-0 m-0">
-        <li className="mx-2">
-          <Link
-            href="/dashboard/AddFunds"
+    <table className="table-auto border-0 text-center bg-slate-100 w-full">
+      <thead className="text-brandColor">
+        <tr className="p-0 m-0">
+          <th
             className={
-              ` text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
-              `${true ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
+              `min-w-32 border-r border-slate-200 text-brandColor font-semibold text-base md:text-xl p-3 underline decoration-2 underline-offset-8 hover:cursor-pointer hover:bg-brandColor hover:text-white hover:decoration-dotted  ` +
+              `${
+                activeTab
+                  ? "text-white italic  bg-brandColor decoration-slate-50 decoration-dotted rounded-lg "
+                  : "not-italic decoration-slate-200"
+              }`
             }
+            onClick={onAddFundsClickHandler}
           >
             Add Funds
-          </Link>
-        </li>
-        <li className="mx-8">
-          <Link
-            href="/dashboard/VendorPayments"
+          </th>
+          <th
             className={
-              `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
-              `${activeTab ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
+              `min-w-32 border-r border-slate-200 text-brandColor font-semibold text-base md:text-xl p-3 underline decoration-2 underline-offset-8 hover:cursor-pointer hover:bg-brandColor hover:text-white hover:decoration-dotted  ` +
+              `${
+                activeTab
+                  ? "text-white italic  bg-brandColor decoration-slate-50 decoration-dotted rounded-lg "
+                  : "not-italic decoration-slate-200"
+              }`
             }
+            onClick={onAddFundsClickHandler}
           >
             Vendor Payments
-          </Link>
-        </li>
-
-        <li className="mx-8">
-          <Link
-            href="/dashboard/PayUtilityBills"
+          </th>
+          <th
             className={
-              `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
-              `${activeTab ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
+              `min-w-32 border-r border-slate-200 text-brandColor font-semibold text-base md:text-xl p-3 underline decoration-2 underline-offset-8 hover:cursor-pointer hover:bg-brandColor hover:text-white hover:decoration-dotted ` +
+              `${
+                activeTab
+                  ? "text-white italic  bg-brandColor decoration-slate-50 decoration-dotted rounded-lg "
+                  : "not-italic decoration-slate-200"
+              }`
             }
+            onClick={onAddFundsClickHandler}
           >
             Pay Utility Bills
-          </Link>
-        </li>
-
-        <li className="mx-8">
-          <Link
-            href="/dashboard/WalletHistory"
+          </th>
+          <th
             className={
-              `text-xl text-brandColor underline decoration-4 underline-offset-8 font-semibold hover:decoration-dotted ` +
-              `${activeTab ? "text-brandColor italic decoration-brandColor" : "not-italic decoration-slate-200"}`
+              `min-w-32 border-r border-slate-200 text-brandColor font-semibold text-base md:text-xl p-3 underline decoration-2 underline-offset-8 hover:cursor-pointer hover:bg-brandColor hover:text-white hover:decoration-dotted  ` +
+              `${
+                true
+                  ? "text-white italic  bg-brandColor decoration-slate-50 decoration-dotted rounded-lg "
+                  : "not-italic decoration-slate-200"
+              }`
             }
+            onClick={onAddFundsClickHandler}
           >
             Wallet History
-          </Link>
-        </li>
-      </ul>
-    </div>
+          </th>
+        </tr>
+      </thead>
+      {/* <tbody>
+          <tr>
+            <td>one</td>
+          </tr>
+        </tbody> */}
+    </table>
   );
 };
 

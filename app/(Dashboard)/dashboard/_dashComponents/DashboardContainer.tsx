@@ -18,7 +18,7 @@ const DashboardContainer = () => {
   }, []);
 
   return (
-    <div className="mt-3 mr-3">
+    <div className="mt-3 mx-3 md:mr-3 lg:mr-3">
       {/* Wallet */}
       <Wallet />
       {/* smallCard Containers */}
