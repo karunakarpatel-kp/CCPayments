@@ -24,7 +24,7 @@ const DashboardContainer = () => {
       {/* smallCard Containers */}
       {addFundsTab && <SmallCardContainers />}
       {/* Tab Navigation */}
-      <TabNavigation activeTab={false} />
+      {/* <TabNavigation activeTab={false} /> */}
     </div>
   );
 };

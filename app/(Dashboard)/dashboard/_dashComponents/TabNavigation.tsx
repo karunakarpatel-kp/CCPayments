@@ -14,6 +14,9 @@ const TabNavigation = (props: tabNavigationProps) => {
   const onAddFundsClickHandler = () => {
     router.push("/dashboard/AddFunds");
   };
+  const onVendorPaymentClickHandler = () => {
+    router.push("/dashboard/VendorPayments");
+  };
   return (
     <table className="table-auto border-0 text-center bg-slate-100 w-full">
       <thead className="text-brandColor">
@@ -40,7 +43,7 @@ const TabNavigation = (props: tabNavigationProps) => {
                   : "not-italic decoration-slate-200"
               }`
             }
-            onClick={onAddFundsClickHandler}
+            onClick={onVendorPaymentClickHandler}
           >
             Vendor Payments
           </th>
