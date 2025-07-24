@@ -18,7 +18,7 @@ const TabNavigation = (props: tabNavigationProps) => {
     router.push("/dashboard/VendorPayments");
   };
   return (
-    <table className="table-auto border-0 text-center bg-slate-100 w-full">
+    <table className="table-fixed border-0 text-center bg-slate-100 w-full overflow-hidden">
       <thead className="text-brandColor">
         <tr className="p-0 m-0">
           <th

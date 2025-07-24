@@ -9,10 +9,7 @@ const BankChargesLayout = (props: any) => {
       <aside className="col-span-2 border-0 border-green-800 h-full mt-3 ">
         <SideBarDash />
       </aside>
-      <section className="col-span-10 border-0 border-red-700">
-        <DashboardContainer />
-        {props.children}
-      </section>
+      <section className="col-span-10 border-0 border-red-700">{props.children}</section>
     </section>
   );
 };
