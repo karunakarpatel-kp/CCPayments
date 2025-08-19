@@ -63,7 +63,6 @@ export function CustomMetaData(props: any) {
     openGraph: {
       title: filteredOBJ[0].title,
       description: filteredOBJ[0].description,
-      type: "article",
       publishedTime: filteredOBJ[0].publishedTime,
       modifiedTime: filteredOBJ[0].lastUpdateTime,
       authors: ["Karunakar Patel"],

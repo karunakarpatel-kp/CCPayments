@@ -15,6 +15,7 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { IoAirplaneSharp } from "react-icons/io5";
 import { FaMobile } from "react-icons/fa";
 import { LuUtilityPole } from "react-icons/lu";
+import { Head } from "next/document";
 
 export const metadata: any = CustomMetaData({ presentURL: SEO_OBJ.HOME_PAGE.absoluteURL });
 
