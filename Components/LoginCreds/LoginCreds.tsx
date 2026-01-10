@@ -7,7 +7,7 @@ const LoginCreds = () => {
   const router = useRouter();
 
   const onSubmitClickHandler = () => {
-    router.push("/dashboard/AddFunds");
+    router.push("/dashboard/Utility");
   };
   return (
     <section className="w-full flex h-full">
