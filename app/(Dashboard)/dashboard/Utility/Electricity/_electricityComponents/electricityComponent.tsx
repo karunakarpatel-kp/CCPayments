@@ -2,8 +2,8 @@ import { memo } from "react";
 
 const ElectricityComponent = () => {
   return (
-    <div className="mt-3 mx-3 md:mr-3 lg:mr-3 ">
-      <div className="grid grid-cols-12 space-x-1">
+    <div className="mt-4 mx-3 md:mr-3 lg:mr-3 ">
+      <div className="grid grid-cols-12 space-x-8">
         <form className="col-span-7">
           <select
             title="Select Biller"
@@ -58,19 +58,29 @@ const ElectricityComponent = () => {
             </button>
           </div>
         </form>
-
-        <div className="billPreview col-span-5  border-slate-300 bg-slate-100 p-2">
+        {/*  BIll Preview */}
+        <div className="billPreview col-span-5 border-slate-100 bg-slate-100 p-4">
           <div className="title text-center ">
-            <h6 className="text-brandColor font-bold text-xl">Bill Fetched</h6>
-          </div>
-          <div className="grid grid-cols-12  mt-6">
-            <div className="col-span-6 text-right pr-5">Customer Name : </div>
-            <div className="col-span-6 pl-3">Karunakar</div>
+            <h6 className="text-brandColor font-bold text-2xl">Bill Fetched</h6>
           </div>
 
-          <div className="grid grid-cols-12  mt-6">
-            <div className="col-span-6 text-right pr-5">Bill Date:</div>
-            <div className="col-span-6 pl-3">Jan 04 2026</div>
+          <div className="grid grid-cols-12  mt-12 text-brandColor">
+            <div className="col-span-6 text-right pr-5 font-semibold text-lg ">Customer Name : </div>
+            <div className="col-span-6 pl-3 font-semibold text-lg text-black">Karunakar Patel</div>
+          </div>
+
+          <div className="grid grid-cols-12  mt-6 text-brandColor ">
+            <div className="col-span-6 text-right pr-5 font-semibold text-lg ">Bill Date: </div>
+            <div className="col-span-6 pl-3 font-semibold text-lg text-black">Jan 04 2026</div>
+          </div>
+
+          <div className="grid grid-cols-12  mt-6 text-brandColor w-full">
+            <button
+              type="submit"
+              className="bg-brandColor text-white py-2 px-3 block col-span-12 m-auto w-1/4 text-lg  hover:shadow-lg"
+            >
+              Pay
+            </button>
           </div>
         </div>
       </div>

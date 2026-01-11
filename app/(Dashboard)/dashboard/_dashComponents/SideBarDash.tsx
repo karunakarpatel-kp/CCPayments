@@ -16,8 +16,8 @@ const SideBarDash = () => {
   };
 
   useEffect(() => {
-    if (incomingBtnTitle === "Bill Payments") {
-      router.push("/dashboard/AddFunds");
+    if (incomingBtnTitle === "Bill Services") {
+      router.push("/dashboard/Utility");
     }
     if (incomingBtnTitle === "Bank Charges") {
       router.push("/dashboard/BankCharges");
@@ -33,7 +33,7 @@ const SideBarDash = () => {
         <Btn
           incomingBtnClickHandler={incomingBtnClickHandler}
           active={true}
-          title="Bill Payments"
+          title="Bill Services"
           iconName={<FaCreditCard fontSize={28} className={`${false} ? 'text-white' : 'text-black'`} />}
         />
       </span>

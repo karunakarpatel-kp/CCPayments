@@ -26,13 +26,13 @@ const Footer = () => {
         <div className="Left border-0 border-white col-span-1 invisible">{/* left */}</div>
         <div className="copyrightMessage border-0 border-green-500 col-span-12 md:col-span-3 lg:col-span-3 cursor-pointer text-white  font-semibold text-base pb-12 text-center md:text-left lg:text-left">
           <h6 className="italic text-3xl text-white font-semibold pb-5 pt-4">SettlePe</h6>
-          <h6 className="italic text-2xl text-white font-semibold pb-5 pt-1">Hanuman Enterprises</h6>
+          {/* <h6 className="italic text-2xl text-white font-semibold pb-5 pt-1">Hanuman Enterprises</h6> */}
           <address className="not-italic">
             Sri Krishna Nagar, <br /> Narsampet, <br /> Warangal Rural, <br /> Telangana 506132
           </address>
           <br />
           <span>+91 9491993154</span> <br />
-          <span>karunakarpatel.settlepe@gmail.com</span>
+          <span>contact@settlepe.com</span>
         </div>
         <div className="privacyLinks border-0 border-white col-span-12 md:col-span-4 lg:col-span-4">
           <ul className="list-none flex flex-col m-auto flex-wrap  justify-center align-middle pt-0 md:pt-10 lg:pt-10">
@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="Right border-0 border-white col-span-1 invisible">{/* Right */}</div>
       </div>
       <div className="text-white w-full text-center text-base md:text-lg lg:text-lg  bg-brandColor py-5 mt-0 md:-mt-5 lg:-mt-5">
-        All Rights Reserved, CopyRight @ Karunakar Patel
+        All Rights Reserved, CopyRight @ SettlePe.
       </div>
     </>
   );
