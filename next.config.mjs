@@ -10,6 +10,7 @@ const nextConfig = {
     HOME_PAGE_BASE_URL: process.env.HOME_PAGE_BASE_URL,
     GOOGLE_ANALYTICS_TAG: process.env.GOOGLE_ANALYTICS_TAG,
   },
+  turbopack: {},
 };
 
 const withMDX = createMDX({

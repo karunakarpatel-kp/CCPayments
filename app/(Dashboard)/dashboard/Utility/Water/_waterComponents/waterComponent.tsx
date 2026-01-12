@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { FaRupeeSign } from "react-icons/fa";
 
 const ElectricityComponent = () => {
   return (
@@ -6,25 +7,18 @@ const ElectricityComponent = () => {
       <div className="grid grid-cols-12 space-x-8">
         <form className="col-span-7">
           <select
-            title="Select State"
-            className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mb-3"
-            required
-          >
-            <option>Select State</option>
-            <option>Telangana </option>
-            <option>Andhra Pradesh</option>
-            <option>Karnataka</option>
-          </select>
-          <select
-            title="Select Biller"
+            title="Select Water Board"
             className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-state"
             required
           >
-            <option>Select Biller</option>
-            <option>Telangana State Power</option>
-            <option>Maharastra Power Bill</option>
-            <option>TSNPDCL</option>
+            <option>Select Water Board</option>
+            <option>Greater Warangal Water (GWMC)</option>
+            <option>Bangalore Water (BWSSB)</option>
+            <option>DDA - East Zone</option>
+            <option>DDA - Narela Zone</option>
+            <option>Chennai water (CMWSSB)</option>
+            <option>AP PHED Itanagar & Naharlagun</option>
           </select>
           <div className="customerDetails grid grid-cols-12 py-2 space-x-1">
             <input
@@ -59,10 +53,10 @@ const ElectricityComponent = () => {
             />
             <input
               type="text"
-              name="Enter USC Number"
-              title="Enter USC Number"
+              name="Enter Connection Number/ID"
+              title="Enter Connection Number/ID"
               inputMode="numeric"
-              placeholder="Enter Customer USC Number"
+              placeholder="Enter Connection Number/ID"
               className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6 "
               required
             />
@@ -92,6 +86,14 @@ const ElectricityComponent = () => {
           <div className="grid grid-cols-12  mt-6 text-brandColor ">
             <div className="col-span-6 text-right pr-5 font-semibold text-lg ">Bill Date: </div>
             <div className="col-span-6 pl-3 font-semibold text-lg text-black">Jan 04 2026</div>
+          </div>
+
+          <div className="grid grid-cols-12  mt-6 text-brandColor ">
+            <div className="col-span-6 text-right pr-5 font-semibold text-lg ">Bill Amount: </div>
+            <div className="col-span-6 pl-3 font-semibold text-lg text-black">
+              <FaRupeeSign className="text-brandColor inline-block font-normal mr-2 -mt-1  text-lg" />
+              1934.38
+            </div>
           </div>
 
           <div className="grid grid-cols-12  mt-6 text-brandColor w-full">

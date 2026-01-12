@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,7 +15,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
     "plugins": [
@@ -21,9 +25,15 @@
     ],
     "paths": {
       // "@Components/*": ["./Components/*"],
-      "@Components/*": ["/Components/*"],
-      "@Navigation/*": ["./Components/NavigationBar/*"],
-      "@Public/*": ["./public/*"]
+      "@Components/*": [
+        "/Components/*"
+      ],
+      "@Navigation/*": [
+        "./Components/NavigationBar/*"
+      ],
+      "@Public/*": [
+        "./public/*"
+      ]
     },
     // "paths": {
     //   // "@/*": ["./*"],
@@ -39,7 +49,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/(site)/(markdown)/reduce-image-size-in-kb/page.mdx",
-    "app/contact-us/page.mdx"
+    "app/contact-us/page.mdx",
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

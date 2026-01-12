@@ -1,30 +1,22 @@
 import { memo } from "react";
+import { FaRupeeSign } from "react-icons/fa";
 
-const ElectricityComponent = () => {
+const VehicleChallanComponent = () => {
   return (
     <div className="mt-4 mx-3 md:mr-3 lg:mr-3 ">
       <div className="grid grid-cols-12 space-x-8">
         <form className="col-span-7">
           <select
-            title="Select State"
-            className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mb-3"
-            required
-          >
-            <option>Select State</option>
-            <option>Telangana </option>
-            <option>Andhra Pradesh</option>
-            <option>Karnataka</option>
-          </select>
-          <select
-            title="Select Biller"
+            title="Select Traffic Authority"
             className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-state"
             required
           >
-            <option>Select Biller</option>
-            <option>Telangana State Power</option>
-            <option>Maharastra Power Bill</option>
-            <option>TSNPDCL</option>
+            <option>Select Traffic Authority</option>
+            <option>Andhra Pradesh Traffic Police</option>
+            <option>Telangana Traffic Police</option>
+            <option>Chennai Traffic Police</option>
+            <option>Tambaram Traffic Police</option>
           </select>
           <div className="customerDetails grid grid-cols-12 py-2 space-x-1">
             <input
@@ -50,19 +42,21 @@ const ElectricityComponent = () => {
           </div>
           <div className=" grid grid-cols-12 py-2 space-x-1">
             <input
-              type="Email"
-              name="Enter Email Address"
-              title="Enter Email"
-              placeholder="Enter Customer Email"
-              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6"
+              type="text"
+              name="Enter Challan ID"
+              title="Enter Challan ID"
+              inputMode="numeric"
+              placeholder="Enter Challan ID"
+              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6 "
               required
             />
+
             <input
               type="text"
-              name="Enter USC Number"
-              title="Enter USC Number"
+              name="Enter Vehicle Number"
+              title="Enter Vehicle Number"
               inputMode="numeric"
-              placeholder="Enter Customer USC Number"
+              placeholder="Enter Vehicle Number "
               className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6 "
               required
             />
@@ -94,6 +88,14 @@ const ElectricityComponent = () => {
             <div className="col-span-6 pl-3 font-semibold text-lg text-black">Jan 04 2026</div>
           </div>
 
+          <div className="grid grid-cols-12  mt-6 text-brandColor ">
+            <div className="col-span-6 text-right pr-5 font-semibold text-lg ">Bill Amount: </div>
+            <div className="col-span-6 pl-3 font-semibold text-lg text-black">
+              <FaRupeeSign className="text-brandColor inline-block font-normal mr-2 -mt-1  text-lg" />
+              34
+            </div>
+          </div>
+
           <div className="grid grid-cols-12  mt-6 text-brandColor w-full">
             <button
               type="submit"
@@ -108,4 +110,4 @@ const ElectricityComponent = () => {
   );
 };
 
-export default memo(ElectricityComponent);
+export default memo(VehicleChallanComponent);

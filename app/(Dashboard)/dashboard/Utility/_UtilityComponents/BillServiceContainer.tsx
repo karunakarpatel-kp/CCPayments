@@ -23,7 +23,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/Water"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <GiTap color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -36,26 +36,26 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="electricyService border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/MobileRecharge"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaMobile className="!text-brandColor text-center m-auto text-4xl " />
               </div>
               <div className="serviceName">
-                <h6 className="text-xl py-2">Mobile</h6>
+                <h6 className="text-xl py-2">Mobile Recharge</h6>
               </div>
             </div>
           </Link>
         </div>
 
         <div className="electricyService border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/Broadband"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200  text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <LuRouter color="white" className="!text-brandColor text-center m-auto text-4xl " />
               </div>
               <div className="serviceName">
-                <h6 className="text-xl py-2">BroadBand</h6>
+                <h6 className="text-xl py-2">Broadband / Landline</h6>
               </div>
             </div>
           </Link>
@@ -63,21 +63,21 @@ const BillServiceContainer = () => {
       </div>
       {/* Second Row */}
       <div className="grid grid-cols-12 space-x-6 my-3">
-        <div className=" border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+        <div className="border-0 border-slate-400 col-span-3 py-1 ">
+          <Link href={"/dashboard/Utility/VehicleChallan"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
-                <FaCreditCard className="!text-brandColor text-center m-auto text-4xl " />
+                <GiDutchBike className="!text-brandColor text-center m-auto text-4xl " />
               </div>
               <div className="serviceName">
-                <h6 className="text-xl py-2 font-semibold">Credit Card</h6>
+                <h6 className="text-xl py-2">Vehicle Challan</h6>
               </div>
             </div>
           </Link>
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <LuCable color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -90,7 +90,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <GiGasStove className="!text-brandColor text-center m-auto text-4xl " />
@@ -103,7 +103,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="electricyService border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200  text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <LuRouter color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -119,7 +119,7 @@ const BillServiceContainer = () => {
 
       <div className="grid grid-cols-12 space-x-6 my-3">
         <div className=" border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaTag className="!text-brandColor text-center m-auto text-4xl " />
@@ -132,7 +132,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <LuOrbit color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -145,7 +145,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaPlane className="!text-brandColor text-center m-auto text-4xl " />
@@ -158,7 +158,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="electricyService border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200  text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaBus color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -175,7 +175,7 @@ const BillServiceContainer = () => {
 
       <div className="grid grid-cols-12 space-x-6 my-3">
         <div className=" border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaTrain className="!text-brandColor text-center m-auto text-4xl " />
@@ -188,7 +188,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaHotel color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -201,7 +201,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <GiHealthNormal className="!text-brandColor text-center m-auto text-4xl " />
@@ -214,7 +214,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className=" border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200  text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <LuBike color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -229,7 +229,7 @@ const BillServiceContainer = () => {
       {/* fifth Row */}
       <div className="grid grid-cols-12 space-x-6 my-3">
         <div className=" border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <FaCar className="!text-brandColor text-center m-auto text-4xl " />
@@ -242,7 +242,7 @@ const BillServiceContainer = () => {
         </div>
 
         <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
                 <GiLifeJacket color="white" className="!text-brandColor text-center m-auto text-4xl " />
@@ -254,14 +254,14 @@ const BillServiceContainer = () => {
           </Link>
         </div>
 
-        <div className="border-0 border-slate-400 col-span-3 py-1 ">
-          <Link href={"/"} className="no-underline">
+        <div className=" border-0 border-slate-400 col-span-3 py-1 ">
+          <Link href={"/dashboard/Utility/AvailableSoon"} className="no-underline">
             <div className="border w-full m-auto bg-slate-200 text-brandColor p-3 text-center rounded-xl shadow-sm hover:shadow-xl hover:cursor-pointer">
               <div className="icon py-4">
-                <GiDutchBike className="!text-brandColor text-center m-auto text-4xl " />
+                <FaCreditCard className="!text-brandColor text-center m-auto text-4xl " />
               </div>
               <div className="serviceName">
-                <h6 className="text-xl py-2">Vehicle Challan</h6>
+                <h6 className="text-xl py-2 font-semibold">Credit Card</h6>
               </div>
             </div>
           </Link>
