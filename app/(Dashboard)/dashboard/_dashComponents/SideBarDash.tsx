@@ -25,6 +25,9 @@ const SideBarDash = () => {
     if (incomingBtnTitle === "Profile") {
       router.push("/dashboard/Profile");
     }
+    if (incomingBtnTitle === "Transaction History") {
+      router.push("/dashboard/Transactions");
+    }
   }, [incomingBtnTitle]);
 
   return (
@@ -41,7 +44,7 @@ const SideBarDash = () => {
         <Btn
           incomingBtnClickHandler={incomingBtnClickHandler}
           active={false}
-          title="Bank Charges"
+          title="Transaction History"
           iconName={<GiBank fontSize={28} className={`${false} ? 'text-white' : 'text-black'`} />}
         />
       </span>
