@@ -6,6 +6,7 @@ import { FaCreditCard } from "react-icons/fa";
 import { ImProfile } from "react-icons/im";
 import { GiBank } from "react-icons/gi";
 import { useRouter } from "next/navigation";
+import { LuLogOut } from "react-icons/lu";
 
 const SideBarDash = () => {
   const router = useRouter();
@@ -28,10 +29,13 @@ const SideBarDash = () => {
     if (incomingBtnTitle === "Transaction History") {
       router.push("/dashboard/Transactions");
     }
+    if (incomingBtnTitle === "Logout") {
+      router.push("/login");
+    }
   }, [incomingBtnTitle]);
 
   return (
-    <div>
+    <div className="border-0 border-red-800 ">
       <span className="flex justify-center align-middle">
         <Btn
           incomingBtnClickHandler={incomingBtnClickHandler}
@@ -54,6 +58,14 @@ const SideBarDash = () => {
           active={false}
           title="Profile"
           iconName={<ImProfile fontSize={28} className={`${false} ? 'text-white' : 'text-black'`} />}
+        />
+      </span>
+      <span className="mt-32 flex justify-center align-middle">
+        <Btn
+          incomingBtnClickHandler={incomingBtnClickHandler}
+          active={false}
+          title="Logout"
+          iconName={<LuLogOut fontSize={28} className={`${false} ? 'text-white' : 'text-black'`} />}
         />
       </span>
     </div>
