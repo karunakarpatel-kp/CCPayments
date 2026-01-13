@@ -2,11 +2,11 @@ import React from "react";
 
 const ProfilePage = () => {
   return (
-    <div className="border-0 border-red-500 pr-2">
+    <div className="border-0 border-red-500 p-1 ">
       <h2 className="text-brandColor text-xl md:text-2xl lg:text-2xl text-center md:text-left lg:text-left border-0 border-black mt-3 px-2">
         Profile Page
       </h2>
-      <table className="text-center bg-slate-100 table-fixed ">
+      <table className="text-center bg-slate-100 table-fixed">
         <thead className="text-brandColor">
           <tr className="">
             <th className="border border-slate-200 text-brandColor font-semibold text-base md:text-lg lg:text-lg p-0">

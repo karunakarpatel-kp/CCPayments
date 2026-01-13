@@ -4,8 +4,8 @@ import { FaRupeeSign } from "react-icons/fa";
 const MobileRechargeComponent = () => {
   return (
     <div className="mt-4 mx-3 md:mr-3 lg:mr-3 ">
-      <div className="grid grid-cols-12 space-x-8">
-        <form className="col-span-7">
+      <div className="grid grid-cols-12 space-x-0 md:space-x-8 lg:space-x-8">
+        <form className="col-span-12 md:col-span-7 lg:col-span-7">
           <select
             title="Select Operator"
             className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mb-3"
@@ -38,7 +38,7 @@ const MobileRechargeComponent = () => {
               name="Enter Customer Name"
               title="Enter Customer Name"
               placeholder="Enter Customer Name"
-              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6"
+              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500  col-span-12 md:col-span-6 lg:col-span-6 mb-3"
               required
             />
             <input
@@ -50,7 +50,7 @@ const MobileRechargeComponent = () => {
               min={1}
               maxLength={10}
               placeholder="Enter Customer Mobile Number"
-              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6 "
+              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500  col-span-12 md:col-span-6 lg:col-span-6 mb-0 "
               required
             />
           </div>
@@ -60,14 +60,14 @@ const MobileRechargeComponent = () => {
               name="Enter Email Address"
               title="Enter Email"
               placeholder="Enter Customer Email"
-              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-6"
+              className="block appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 col-span-8"
               required
             />
             <button
               type="submit"
               name="Browse Plans"
               title="Browse Plans"
-              className="block  w-2/4 border border-gray-200 bg-slate-100 text-brandColor placeholder:text-white py-3 px-4 pr-8 rounded leading-tight focus:outline-none col-span-6"
+              className="block  md:w-2/4 lg:w-2/4  border border-gray-200 bg-slate-100 text-brandColor placeholder:text-white py-3 px-4 pr-8 rounded leading-tight focus:outline-none col-span-4 text-sm"
             >
               Browse Plans
             </button>
@@ -77,14 +77,14 @@ const MobileRechargeComponent = () => {
               type="submit"
               name="Fetch Bill"
               title="Fetch Bill "
-              className="block  w-full  border border-gray-200 bg-brandColor text-white placeholder:text-white py-3 px-4 pr-8 rounded leading-tight focus:outline-none col-span-6"
+              className="block  w-full  border border-gray-200 bg-brandColor text-white placeholder:text-white py-3 px-4 pr-8 rounded leading-tight focus:outline-none col-span-12 md:col-span-6 lg:col-span-6"
             >
               Fetch Bill
             </button>
           </div>
         </form>
         {/*  BIll Preview */}
-        <div className="billPreview col-span-5 border-slate-100 bg-slate-100 p-4">
+        <div className="billPreview col-span-12 md:col-span-5 lg:col-span-5 border-slate-100 bg-slate-100 p-4 mt-10 md:mt-0 lg:mt-0">
           <div className="title text-center ">
             <h6 className="text-brandColor font-bold text-2xl">Bill Fetched</h6>
           </div>
