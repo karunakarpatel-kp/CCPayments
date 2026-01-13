@@ -33,7 +33,9 @@ const Btn = (props: BtnProps) => {
             {/* <FaHome fontSize={28} className={`${active} ? 'text-white' : 'text-black'`} /> */}
             {iconName}
           </span>
-          <span className="col-span-8 border-0 border-green-800 flex justify-start align-middle">{title}</span>
+          <span className="col-span-8 border-0 border-green-800 flex justify-start align-middle text-base">
+            {title}
+          </span>
         </span>
       </button>
     </>

@@ -117,7 +117,7 @@ const Navigation = (props: NavigationProps) => {
       {/* SideBar Content */}
       {openSideBar && (
         <div
-          className="sideBarContent absolute top-20 bottom-0 right-0 left-0 bg-slate-50 z-20"
+          className="sideBarContent absolute top-20 right-0 left-0 bottom-0   bg-slate-50 z-20"
           onClick={onSidbarContainerClickHandler}
         >
           <SideBarDash />
