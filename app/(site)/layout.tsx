@@ -7,6 +7,8 @@ import { AppProgressBar } from "next-nprogress-bar";
 import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgressBar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
+import "../globals.css";
+
 interface RootLayoutProps {
   children: React.ReactNode;
 }

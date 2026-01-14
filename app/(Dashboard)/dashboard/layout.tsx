@@ -7,6 +7,8 @@ import ReadingProgressBar from "Components/UI/ReadingProgressBar/ReadingProgress
 import { AppProgressBar } from "next-nprogress-bar";
 import React from "react";
 
+import "../../globals.css";
+
 interface DashboardLayoutProps {
   children: React.ReactNode;
 }
