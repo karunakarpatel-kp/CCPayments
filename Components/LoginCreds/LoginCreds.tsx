@@ -1,14 +1,23 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import React from "react";
+import { getUserEnteredLoginDetails } from "app/Slices/loginSlice";
+import React, { useRef } from "react";
+import { useDispatch } from "react-redux";
 
 const LoginCreds = () => {
-  const router = useRouter();
+  const dispatch = useDispatch();
+
+  const userNameRef = useRef<HTMLInputElement | null>(null);
+  const passWordRef = useRef<HTMLInputElement | null>(null);
 
   const onSubmitClickHandler = () => {
-    router.push("/dashboard/Utility");
+    const loginCred = {
+      userName: userNameRef.current!.value,
+      passWord: passWordRef.current!.value,
+    };
+    dispatch(getUserEnteredLoginDetails(loginCred));
   };
+
   return (
     <section className="w-full flex h-full">
       <div className="w-full mt-5 md:mt-32 lg:mt-32">
@@ -20,6 +29,7 @@ const LoginCreds = () => {
           <input
             name="userName"
             type="text"
+            ref={userNameRef}
             placeholder="Enter Your UserName"
             className="border-0 border-slate-300 w-full p-3 bg-slate-100 text-base md:text-lg lg:text-lg mt-2"
           />
@@ -29,6 +39,7 @@ const LoginCreds = () => {
           <input
             name="password"
             type="password"
+            ref={passWordRef}
             placeholder="Enter Your Password"
             className="border-0 border-slate-300 w-full p-3 bg-slate-100 text-base md:text-lg lg:text-lg mt-2"
           />
