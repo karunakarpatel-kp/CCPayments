@@ -29,7 +29,7 @@ const SideBarDash = () => {
         <Btn
           incomingBtnClickHandler={incomingBtnClickHandler}
           active={pathName.includes("/Utility")}
-          title="Bill Services"
+          title="Utility Bill Services"
           iconName={<FaCreditCard fontSize={28} className={`${false} ? 'text-white' : 'text-black'`} />}
         />
       </Link>
