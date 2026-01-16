@@ -1,11 +1,13 @@
 "use client";
 
 import { getUserEnteredLoginDetails } from "app/Slices/loginSlice";
+import { useRouter } from "next/navigation";
 import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
 
 const LoginCreds = () => {
   const dispatch = useDispatch();
+  const navigate = useRouter();
 
   const userNameRef = useRef<HTMLInputElement | null>(null);
   const passWordRef = useRef<HTMLInputElement | null>(null);
@@ -16,6 +18,7 @@ const LoginCreds = () => {
       passWord: passWordRef.current!.value,
     };
     dispatch(getUserEnteredLoginDetails(loginCred));
+    navigate.push("/dashboard/Utility");
   };
 
   return (

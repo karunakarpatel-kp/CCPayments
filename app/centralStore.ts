@@ -16,5 +16,5 @@ export type RootState = ReturnType<typeof centralStore.getState>;
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof centralStore.dispatch;
 
-// export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
-// export const useAppSelector = useSelector.withTypes<RootState>();
+export const useAppDispatch = useDispatch.withTypes<AppDispatch>();
+export const useAppSelector = useSelector.withTypes<RootState>();
